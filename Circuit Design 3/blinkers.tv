@@ -1,0 +1,16 @@
+10_000  // reset blinkers FSM, all bits of blinkingLights turn off
+01_100  // turn signal on, so most significant bit of blinkingLights turns on
+00_000
+01_100  
+01_110  // turn signal remains on, two most significant bits of blinkingLights are on
+00_000
+01_100
+01_110
+01_111  // turn signal remains on, all bits of blinkingLights are on
+00_000
+01_100
+01_110
+01_111
+01_000  // turn signal remains on, all bits of blinkingLights turn off
+00_000
+//continue checking the FSM so that *all* the transitions have been enumerated, the above is just to help you get a start
